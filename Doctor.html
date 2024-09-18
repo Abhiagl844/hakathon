@@ -1,0 +1,129 @@
+<html></html>
+<head>
+    <title>Staff Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            display: flex;
+        }
+        .sidebar {
+            width: 200px;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            height: 100vh;
+        }
+        .sidebar h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .sidebar a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 10px 0;
+            font-size: 18px;
+            margin-bottom: 10px; 
+        }
+        .sidebar a:hover {
+            background-color: #575757;
+        }
+        .content {
+            flex-grow: 1;
+            padding: 20px;
+        }
+        .content h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            text-align: center; 
+        }
+        .details {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .details p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .details p span {
+            font-weight: bold;
+        }
+        footer {
+         width: 100%; /* set width to 100% of the screen */
+         background-color: black; /* optional: add a background color */
+         color: white;
+        /* padding: 20px; optional: add some padding */
+        text-align: center; /* optional: center the footer content */
+        /* position: absolute;   */
+        bottom: 0; /* stick the footer to the bottom of the screen */
+          left: 0; /* stick the footer to the left of the screen */
+        }.complain{
+            color: white;
+            background-color: red;
+            cursor: pointer;
+            text-align: right;
+            margin-right: 0;
+            margin-top: 15px;
+          }
+  .boo{
+    display: flex;
+  }
+  .foot{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Dashboard</h2>
+            <a href="./Dosti.html">Home</a>
+            <a href="./Avail.html">Availability</a>
+            <a href="Invmanagement.html">Inventry</a>
+            <a href="./Doctor.html">Doctor's Details</a>
+            <a href="./BLOOD.html">Blood Bank</a>
+            <a href="#">Settings</a>
+            <a href="./index.html">Logout</a>
+        </div>
+        <div class="content">
+            <h1>Doctor's Details</h1>
+            <div class="details">
+                <p><span>Name:</span> Abhi</p>
+                <p><span>Gender:</span> Male</p>
+                <p><span>Age:</span> 28</p>
+                <p><span>Description:</span> Experienced doctor with a background in general medicine and patient care.</p>
+                <p><span>Qualification:</span> M.B.B.S. in Medicine</p>
+                <p><span>Experience:</span> 10 years</p>
+                <p><span>Specialization:</span> Cardiology</p>
+            </div>
+        </div>
+    </div>
+    <!-- <footer>
+        <div class="foot">
+          <div>
+        
+          <ul><a href="./about.html" style="color: white;">About Us</a> </ul>
+          </div>  
+          <div>
+          <ul><a href="./contact.html" style="color: white;">Contact Us</a></ul>
+        
+        </div>
+        <div>
+        <button class="complain">
+          COMPLAIN
+         </button>
+         </div>
+         </div>
+         <p>&copy; 2024 Medilink</p>
+        </footer> -->
+</body>
+</html>

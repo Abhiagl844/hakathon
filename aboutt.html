@@ -1,0 +1,284 @@
+<html></html>
+<head>
+    <title>Blood Bank Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .header {
+                 display: flex;
+                 justify-content: space-between;
+                 align-items: center;
+                 padding: 10px 20px;
+                 background-color: #D2D8FB;
+             }
+             .header img {
+               width: 250px;
+               height: 80px;
+             }
+             .header nav a {
+                 margin: 0 15px;
+                 text-decoration: none;
+                 color: black;
+                 font-weight: bold;
+             }
+             .header .login-signup {
+                 background-color: #1e3ce6;
+                 color: white;
+                 padding: 10px 20px;
+                 border-radius: 20px;
+                 text-decoration: none;
+             }
+             footer {
+         width: 100%; /* set width to 100% of the screen */
+         background-color: rgb(59, 54, 54);; /* optional: add a background color */
+         color: white;
+        /* padding: 20px; optional: add some padding */
+        text-align: center; /* optional: center the footer content */
+        position: absolute;  
+        bottom: 0; /* stick the footer to the bottom of the screen */
+          left: 0; /* stick the footer to the left of the screen */
+        }.complain{
+            color: white;
+            background-color: red;
+            cursor: pointer;
+            text-align: right;
+            margin-right: 0;
+            margin-top: 15px;
+          }
+  .boo{
+    display: flex;
+  }
+  .foot{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+        /* .container {
+            display: flex;
+            height: 100vh;
+        } */
+        /* .sidebar {
+            width: 200px;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+        }
+        .sidebar h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .sidebar a {
+            display: block;
+            padding: 10px;
+            margin-bottom: 20px; 
+            background-color: #444;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            border-radius: 5px;
+        }
+        .sidebar a:hover {
+            background-color: #555;
+        } */
+        .main-content {
+            flex-grow: 1;
+            padding: 20px;
+            background-color: #fff;
+            border-left: 1px solid #ccc;
+        }
+        .main-content h1 {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+        }
+        /* .buttons {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .buttons button {
+            margin: 0 10px;
+            padding: 10px 20px;
+            border: 1px solid #333;
+            background-color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .buttons button:hover {
+            background-color: #f0f0f0;
+        } */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px dashed #333;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f0f0f0;
+        }
+        .content {
+            flex-grow: 1;
+            padding: 20px;
+        }
+        .content h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            text-align: center; 
+        }
+        .details {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .content {
+            flex-grow: 1;
+            padding: 20px;
+            box-sizing: border-box;
+            background-size: cover; 
+            background-position: center; 
+        }
+        .content h3 {
+            background-color: #3498db;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 0 0 20px 0;
+            text-align: center; 
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img alt="Medilink logo" height="50" src="logo.jpg" width="50"/>
+        <nav style="margin-left: 550px;">
+         <a href="./f3.html">
+          HOME
+         </a>
+         <a href="./about1.html">
+          ABOUT
+         </a>
+         <!-- <a href="#">
+          FILTERS
+         </a> -->
+         <a href="./contact1.html">
+          CONTACT
+         </a>
+        </nav>
+        
+        <a class="login-signup" href="./index.html" >
+         LOGOUT
+        </a>
+        
+       </header>
+    <!-- <div class="container">
+        <div class="sidebar">
+            <h2>Dashboard</h2>
+            <a href="./Dosti.html">Home</a>
+            <a href="./Avail.html">Availability</a> 
+            <a href="Invmanagement.html">Inventry</a>
+            <a href="./BLOOD.html">Blood Bank</a> 
+            <a href="#">Settings</a>
+            <a href="./index.html">Logout</a>
+        </div> -->
+        <!-- <div class="main-content">
+            <h1>Blood Bank</h1> -->
+            <!-- <div class="buttons">
+                <button>Add</button>
+                <button>Edit</button>
+                <button>Delete</button>
+            </div> -->
+            <!-- <table>
+                <thead>
+                    <tr>
+                        <th>B.Type</th>
+                        <th>Availability</th>
+                        <th>Unit</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>A+</td>
+                        <td>Yes</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>B+</td>
+                        <td>No</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>O+</td>
+                        <td>Yes</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>AB+</td>
+                        <td>No</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>A-</td>
+                        <td>Yes</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td>B-</td>
+                        <td>No</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>O-</td>
+                        <td>Yes</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>AB-</td>
+                        <td>No</td>
+                        <td>0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div> -->
+    <div class="content">
+        <h3>ABOUT</h3>
+        <div class="card">
+            <p>Name: Agarwal Medical</p>
+            <p>Email: xyz@gmail.com</p>
+            <p>Contact: +911234567892</p>
+            <p>Description: This is very good hospital</p>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="foot">
+          <div>
+        
+          <ul><a href="./about1.html" style="color: white;text-decoration: none;">About Us</a> </ul>
+          </div>  
+          <div>
+          <ul><a href="#" style="color: white;text-decoration: none;">Contact Us</a></ul>
+        
+        </div>
+        <div>
+        <button class="complain">
+          COMPLAIN
+         </button>
+         </div>
+         </div>
+         <p>&copy; 2024 Medilink</p>
+        </footer>
+</body>
+</html>

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+   Hospital
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fefdfd;
+        }
+        /* nav */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #fbfcff;
+        }
+        .header img {
+          width: 250px;
+          height: 80px;
+        }
+        .header nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+        .header .login-signup {
+            background-color: #1e3ce6;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+        }
+        /* nav end */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            background-color: #f3f4f9;
+        }
+        .image-container {
+            display: flex;
+            width: 100%;
+        }
+        .image-container img {
+            width: 50%;
+            height: 400px;
+        }
+        .details {
+            width: 60%;
+            padding: 20px;
+        }
+        .details h1 {
+            font-size: 40px;
+            color: #2c3e50;
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 700;
+
+        }
+        .details p {
+            font-size: 22px;
+            color: #7f8c8d;
+            margin: 5px 0;
+            margin-left: 20px;
+        }
+        .details h2 {
+            font-size: 24px;
+            color: #2c3e50;
+            margin: 20px 0 10px;
+        }
+        .bed-selection {
+            display: flex;
+            gap: 10px;
+        }
+        .bed {
+            width: 80px; 
+            height: 30px;
+            /* background-color: #d3d3d3; */
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            color: #2c3e50;
+        }
+        .price-container {
+            width: 30%;
+            height:20%
+            background-color: #e0e0e0;
+            padding: 20px;
+            border-radius: 30px;
+            text-align: center;
+            margin-top: 20px;
+            margin-right: 20px;
+        } 
+        .price-container h2 {
+            font-size: 24px;
+            color: #2c3e50;
+            margin: 0 0 20px;
+        }
+        /* .coupon {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .coupon input {
+            width: 70%;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .coupon button {
+            width: 25%;
+            background-color: #1abc9c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        } */
+        .book-now {
+            background-color: #6c5b7b;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .bed-selection {
+            display: flex;
+            justify-content: left;
+            margin: 20px 0;
+        }
+        .bed-selection button {
+            margin: 0 10px;
+            padding: 10px 20px;
+            border: 1px solid #333;
+            background-color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .bed-selection button:hover {
+            background-color: #f0f0f0;
+        }
+        footer {
+            width: 100%; /* set width to 100% of the screen */
+             background-color:rgb(59, 54, 54);; /* optional: add a background color */
+             color: white;
+            /* position: absolute; */
+            /* padding: 20px; optional: add some padding */
+            text-align: center; /* optional: center the footer content */
+        bottom: 0; /* stick the footer to the bottom of the screen */
+  left: 0; /* stick the footer to the left of the screen */
+}
+  .complain{
+            color: white;
+            background-color: red;
+            cursor: pointer;
+            text-align: right;
+            margin-right: 0;
+            margin-top: 20px;
+          }
+  .boo{
+    display: flex;
+  }
+  .foot{
+    display: grid;
+    margin-top: -15px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  </style>
+ </head>
+ <body>
+    <header class="header">
+        <img alt="Medilink logo" height="50" src="logo1.jpg" width="50"/>
+        <nav style="margin-left: 450px;">
+         <a href="./index.html">
+          HOME
+         </a>
+         <a href="#">
+          ABOUT
+         </a>
+         <a href="./login1.html">
+          DOCTORS
+         </a>
+         <a href="#">
+          CONTACT
+         </a>
+         <a href="./login1.html">
+           INVENTORY
+           </a>
+           <a href="./login1.html">
+            BLOOD
+            </a>
+           
+        </nav>
+        <a class="login-signup" href="./login1.html">
+         LOGIN/SIGN UP
+        </a>
+       </header>
+  <div class="container">
+   <div class="image-container">
+    <img src="f3_hos.jpg" alt="Exterior view of the hospital building"width="600"height="200"/>
+    
+    <img src="f3_doc.jpg"alt="Interior view of the hospital corridor" height="200" width="300"/>
+    
+   </div>
+   <div class="details">
+    <h1>Agrawal Medical College and Hospital</h1>
+    <p>Murguru, kolkata, 7885221</p>
+    <h2>Amenities</h2>
+    <h2>
+     Choose Your Bed
+    </h2>
+    <div class="bed-selection">
+     <div class="bed">
+      <button>Single Avai:50</button>
+     </div>
+     <div class="bed">
+      <button>Double Avail:40</button>
+     </div>
+     <div class="bed">
+      <button>Four Avail:20</button>
+     </div>
+     <div class="bed">
+      <button>Multi Avail:80</button>
+     </div>
+     <div class="bed">
+      <button>Opdis Avail</button>
+     </div>
+    </div>
+   </div>
+   <div class="price-container">
+    <h2>
+     Price
+    </h2>
+    <div class="coupon">
+     <input placeholder="Price" type="text"/>
+     <!-- <button>
+      APPLY
+     </button> -->
+    </div>
+    <a href="./login1.html">
+    <button class="book-now">
+     BOOK NOW
+    </button>
+    </a>
+   </div>
+  </div>
+  <footer>
+    <div class="foot">
+      <div>
+    
+      <ul><a href="./about1.html" style="color: white; text-decoration: none;">About Us</a> </ul>
+      </div>  
+      <div>
+      <ul><a href="#" style="color: white; text-decoration: none;">Contact Us</a></ul>
+    
+    </div>
+    <div>
+    <button class="complain">
+      COMPLAIN
+     </button>
+     </div>
+     </div>
+     <p style="margin-top: -8px;">&copy; 2024 Medilink</p>
+    </footer>
+ </body>
+</html>
